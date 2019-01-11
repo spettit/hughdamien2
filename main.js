@@ -7,6 +7,7 @@ function runAnimation() {
   const subtitle = document.getElementById('subtitle')
   const mercs = document.getElementById('mercs')
   const scrollArrows = document.getElementById('scroll-arrows')
+  const subTitleBar = document.getElementById('subtitle-bar')
 
   titleDiv.classList.add('position-one')
   titleDiv.classList.remove('expanded')
@@ -15,6 +16,7 @@ function runAnimation() {
   subtitle.classList.remove('behidden')
   mercs.classList.remove('behidden')
   scrollArrows.classList.remove('behidden')
+  subTitleBar.classList.remove('behidden')
 }
 
 

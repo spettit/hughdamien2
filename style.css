@@ -8,25 +8,48 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* #centering-wrapper {
-  background-color: cyan;
-  width: 100vw;
+#centering-wrapper {
+  /* background-color: cyan; */
+  width: 100%;
+  min-width: 1390px;
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
 
-#title-bar {
+#menu-and-content-wrapper {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+}
+
+#titlebar-wrapper {
   z-index: 1000;
   background-color: white;
-  /* height: 20px; */
+
   position: sticky;
   position: -webkit-sticky;
+  top: 0px;
+  height: 140px;
+}
+
+#title-bar {
   height: 80px;
   top: 0px;
-  width: 100vw;
+  width: 1390px;
+  display: flex;
+  justify-content: center;
+}
+
+#subtitle-bar {
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 80px;
+  width: 1390px;
   display: flex;
   justify-content: space-between;
+  transition: opacity 500ms ease-in 10s;
 }
 
 #menu {
@@ -37,13 +60,13 @@ body {
 }
 
 #menu-div {
-  background-color: lightgrey;
-  width: 300px;
-  height: 100vh;
+  /* background-color: lightgrey; */
+  width: 0px;
+  height: 930px;
 }
 
 #title-div {
-  /* z-index: 10000; */
+  z-index: 10000;
   /* background-color: aqua; */
   align-self: flex-end;
   display: flex;
@@ -59,9 +82,9 @@ body {
   transition: transform 200ms ease-in-out 0s;
 }
 
-#contact {
+#contact-div {
   /* background-color: beige; */
-  width: 300px;
+  width: 200px;
   text-align: right;
   align-self: flex-end;
   margin-right: 20px;
@@ -76,8 +99,8 @@ body {
 
 #content-container {
   /* width: calc(100vw + 300px); */
-  width: 100vw;
-  height: calc(100vh - 60px);
+  width: 1390px;
+  height: 700px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -105,21 +128,22 @@ body {
 }
 
 #menu-div {
-  position: fixed;
-  top: 60px;
+  position: sticky;
+  top: 153px;
+  left: 0px;
   z-index: -10;
 }
 
 .expanded {
-  transform: translate(0px, 600px) scale(0.8, 0.8);
+  transform: translate(0px, 668px) scale(1, 1);
 }
 
 .position-one {
-  transform: translate(0px, 450px) scale(0.4, 0.4);
+  transform: translate(0px, 468px) scale(0.66, 0.66);
 }
 
 .position-final {
-  transform: translate(0px, 206px) scale(0.3, 0.3);
+  transform: translate(0px, 244px) scale(0.5, 0.5);
 }
 .behidden {
   opacity: 0;
@@ -148,6 +172,6 @@ body {
 /* customer section */
 
 #customer-div {
-  height: calc(100vh - 60px);
-  background-color: darkgrey;
+  height: 588px;
+  /* background-color: darkgrey; */
 }
