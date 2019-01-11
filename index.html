@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/hyb3cvv.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body onload="window.location.hash ='#start';">
+    <div id="start"></div>
     <div id="centering-wrapper">
       <div id="menu-and-content-wrapper">
         <div id="menu-div">
@@ -49,7 +51,7 @@
                 <img
                   class=""
                   id="menu-icon"
-                  src="img/menu-icon-rotate-90-rollover.jpg"
+                  src="img/menu-icon.jpg"
                   alt=""
                   onclick="showMenu()"
                 />
@@ -61,7 +63,7 @@
           <div id="content-wrapper">
             <!-- <div id="menu-cover">menu cover</div> -->
             <div id="content-panels">
-              <div id="content-container">
+              <div id="section-one-mercs">
                 <!-- <div id="menu-cover"></div> -->
                 <div id="mercs" class="behidden">
                   <img src="img/mercs.jpg" alt="mercedes" />
@@ -70,7 +72,18 @@
                   <img src="img/scoll-arrow.jpg" alt="scroll-arrowa" />
                 </div>
               </div>
-              <div id="customer-div"></div>
+              <div id="section-two-passenger">
+                <div id="passenger-text">
+                  <img src="" alt="" />
+                  <h3></h3>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                  vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                  nisi vulputate fringilla. Donec lacinia congue felis in
+                  faucibus.
+                </div>
+                <img src="img/passenger.jpg" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -78,5 +91,11 @@
     </div>
 
     <!-- </div> -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scr/main.js"></script>
   </body>
 </html>

@@ -28,6 +28,7 @@ function showMenu() {
 
 // window.addEventListener('scroll')
 window.onscroll = function() {
+  console.log()
     var titleDiv = document.getElementById('title-div')
     if(titleDiv.classList.contains("position-one")){
       titleDiv.classList.remove("title-slow")
@@ -37,9 +38,29 @@ window.onscroll = function() {
     }
 }
 
+// $(document).ready(function(){
+
+//   window.scroll(0,500);
+  
+//   });
+
+
+
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
+
+// window.onbeforunload = function () {
+//   window.scrollTo(0,0);
+
 
 window.onload = function() {
-  runAnimation()
+  // window.scrollTo(0, 0)
+  console.log(window.scrollY)
+  // if(window.scrollY <= 0) {
+    runAnimation()
+  // }
+  
 }
 
 
