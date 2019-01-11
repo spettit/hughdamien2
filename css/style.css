@@ -167,7 +167,14 @@ body {
 
 /* customer section */
 
-#section-two-passenger {
+.panel {
+  width: 1390px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 150px;
+}
+
+.image-box {
   height: 588px;
   background-color: #525252;
   display: flex;
@@ -177,4 +184,12 @@ body {
 
 #passenger-text {
   width: 468px;
+}
+
+.text-box {
+  padding: 40px;
+}
+
+#section-three-fleet {
+  background-color: white;
 }
