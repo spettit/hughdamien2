@@ -28,13 +28,15 @@ function showMenu() {
 
 // window.addEventListener('scroll')
 window.onscroll = function() {
-  console.log()
+  // console.log()
+  var scrollArrows = document.getElementById('scroll-arrows')
     var titleDiv = document.getElementById('title-div')
     if(titleDiv.classList.contains("position-one")){
       titleDiv.classList.remove("title-slow")
       titleDiv.classList.add('title-fast')
       titleDiv.classList.add('position-final')
       titleDiv.classList.remove("position-one")
+      scrollArrows.style.visibility = "hidden"
     }
 }
 
