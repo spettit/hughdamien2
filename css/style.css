@@ -167,11 +167,15 @@ body {
 
 /* customer section */
 
+#spacer {
+  height: 300px;
+}
+
 .panel {
   width: 1390px;
   position: sticky;
   position: -webkit-sticky;
-  top: 150px;
+  top: 145px;
 }
 
 .image-box {
@@ -182,14 +186,42 @@ body {
   color: white;
 }
 
-#passenger-text {
+/* #passenger-text {
   width: 468px;
-}
+} */
 
 .text-box {
+  min-width: 500px;
+  max-width: 500px;
   padding: 40px;
 }
 
 #section-three-fleet {
   background-color: white;
+}
+
+#fleet-text {
+  padding: 50px;
+}
+
+#passenger-parallax {
+  /* height: 100; */
+  width: 100%;
+  background-color: blueviolet;
+  background-image: url("/img/passenger.jpg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#airport-parallax {
+  width: 100%;
+  /* width: 930px; */
+  background-color: blueviolet;
+  background-image: url("/img/panel3-airport.jpg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
