@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #centering-wrapper {
+  background-color: cyan;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+#title-bar {
+  z-index: 1000;
+  background-color: white;
+  /* height: 20px; */
+  position: sticky;
+  position: -webkit-sticky;
+  height: 80px;
+  top: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu {
+  /* background-color: beige; */
+  width: 300px;
+  align-self: flex-end;
+  margin-left: 20px;
+}
+
+#menu-div {
+  background-color: lightgrey;
+  width: 300px;
+  height: 100vh;
+}
+
+#title-div {
+  /* z-index: 10000; */
+  /* background-color: aqua; */
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-slow {
+  transition: transform 1s ease-in-out 8s;
+}
+
+.title-fast {
+  transition: transform 200ms ease-in-out 0s;
+}
+
+#contact {
+  /* background-color: beige; */
+  width: 300px;
+  text-align: right;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+#content-wrapper {
+  /* background-color: black; */
+  display: flex;
+  flex-direction: row;
+  transition: transform 1s ease-in-out;
+}
+
+#content-container {
+  /* width: calc(100vw + 300px); */
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* #menu-cover {
+  background-color: white;
+  min-width: 150px;
+  height: 300px;
+  align-self: flex-start;
+} */
+
+.slide-away {
+  transform: translate(300px, 0px);
+}
+
+#menu-icon {
+  transition: transform 1s ease-in-out;
+}
+
+.rotate-icon {
+  transform: rotate(90deg);
+}
+
+#menu-div {
+  position: fixed;
+  top: 60px;
+  z-index: -10;
+}
+
+.expanded {
+  transform: translate(0px, 600px) scale(0.8, 0.8);
+}
+
+.position-one {
+  transform: translate(0px, 450px) scale(0.4, 0.4);
+}
+
+.position-final {
+  transform: translate(0px, 206px) scale(0.3, 0.3);
+}
+.behidden {
+  opacity: 0;
+}
+
+#hugh {
+  transition: opacity 4s ease-in-out;
+}
+
+#damien {
+  transition: opacity 2s ease-in-out 4s;
+}
+
+#subtitle {
+  transition: opacity 2s ease-in-out 6s;
+}
+
+#mercs {
+  transition: opacity 500ms ease-in-out 9s;
+}
+
+#scroll-arrows {
+  transition: opacity 1s ease-in-out 9s;
+}
+
+/* customer section */
+
+#customer-div {
+  height: calc(100vh - 60px);
+  background-color: darkgrey;
+}
