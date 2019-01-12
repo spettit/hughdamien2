@@ -8,7 +8,10 @@ const subTitleBar = document.querySelector("#subtitle-bar");
 const contentWrapper = document.querySelector("#content-wrapper");
 const menuDiv = document.querySelector("#menu-div");
 const menuIcon = document.querySelector("#menu-icon");
-const sectionSixTours = document.querySelector('#section-six-tours')
+const fleet = document.querySelector('#section-three-fleet');
+const airport = document.querySelector('#section-four-airport');
+const tours = document.querySelector('#section-six-tours');
+const contact = document.querySelector('#section-eight-contact');
 
 function runAnimation() {
   titleDiv.classList.add("position-one");
@@ -71,16 +74,37 @@ window.onload = function() {
   runAnimation();
 };
 
-function scrollToTours() {
+function scrollToFleet() {
   window.scrollTo(0, 0)
-  sectionSixTours.scrollIntoView({ 
-    // behavior: 'smooth',
+  fleet.scrollIntoView({ 
     inline: "end"
   });
   window.scrollTo(0, window.scrollY)
 }
-// window.onscroll = function () {
-//   // console.log(window.scrollY)
-//   window.scrollTo(0, window.scrollY)
-// }
+function scrollToAirport() {
+  window.scrollTo(0, 0)
+  airport.scrollIntoView({ 
+    inline: "end"
+  });
+  window.scrollTo(0, window.scrollY)
+}
+function scrollToTours() {
+  window.scrollTo(0, 0)
+  tours.scrollIntoView({ 
+    inline: "end"
+  });
+  window.scrollTo(0, window.scrollY)
+}
+function scrollToContact() {
+  window.scrollTo(0, 0)
+  contact.scrollIntoView({ 
+    inline: "end"
+  });
+  window.scrollTo(0, window.scrollY)
+}
+
+window.onscroll = function () {
+  // console.log(window.scrollY)
+  window.scrollTo(0, window.scrollY)
+}
 
