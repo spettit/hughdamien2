@@ -40,3 +40,13 @@ window.onscroll = function() {
 window.onload = function() {
   runAnimation();
 };
+
+function scrollToTours() {
+  // document.querySelector('#section-six-tours').scrollIntoView({ 
+  //   behavior: 'smooth',
+  //   inline: "end"
+  // });
+  console.log('scroll')
+  $("#section-six-tours").scrollintoview()
+}
+

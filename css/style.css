@@ -62,10 +62,12 @@ body {
 }
 
 #menu-div {
-  /* background-color: lightgrey; */
-  width: 0px;
-  height: 930px;
-  overflow: hidden;
+  background-color: lightgray;
+  position: fixed;
+  top: 140px;
+  width: 300px;
+  height: 587px;
+  /* z-index: -1; */
 }
 
 #title-div {
@@ -122,13 +124,6 @@ body {
 
 .rotate-icon {
   transform: rotate(90deg);
-}
-
-#menu-div {
-  position: sticky;
-  top: 153px;
-  left: 0px;
-  z-index: -10;
 }
 
 .expanded {
