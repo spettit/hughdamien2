@@ -265,6 +265,7 @@ img {
 /* FLEET */
 
 #section-three-fleet {
+  height: 680px;
   background-color: white;
 }
 
@@ -301,11 +302,28 @@ img {
   background-attachment: fixed;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #airport-parallax {
+    width: 100%;
+    background-color: #525252;
+    background-image: url("/img/panel3-airport.jpg");
+    background-size: auto 100%;
+    background-position: 100% 140px;
+    background-repeat: no-repeat;
+  }
+}
+
+#section-five-feedback {
+  background-color: white;
+  height: 244px;
+}
 
 
 /* TOURS */
 
 #section-six-tours {
+  background-color: white;
   height: 687px;
 }
 

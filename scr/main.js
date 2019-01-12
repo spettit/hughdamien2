@@ -61,35 +61,35 @@ function sendTitleToTop() {
 function scrollToFleet() {
   window.scrollTo(0, 0);
   fleet.scrollIntoView({
-    inline: "end"
+    block: "start"
   });
   window.scrollTo(0, window.scrollY);
 }
 function scrollToAirport() {
   window.scrollTo(0, 0);
   airport.scrollIntoView({
-    inline: "end"
+
   });
   window.scrollTo(0, window.scrollY);
 }
 function scrollToTours() {
   window.scrollTo(0, 0);
   tours.scrollIntoView({
-    inline: "end"
+
   });
   window.scrollTo(0, window.scrollY);
 }
 function scrollToContact() {
   window.scrollTo(0, 0);
   contact.scrollIntoView({
-    inline: "end"
+
   });
   window.scrollTo(0, window.scrollY);
 }
 
 window.onscroll = function() {
   sendTitleToTop();
-  window.scrollTo(0, window.scrollY);
+  // window.scrollTo(0, window.scrollY);
 };
 
 window.onload = function() {
