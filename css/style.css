@@ -8,6 +8,7 @@ body {
   font-family: europa, sans-serif;
   font-style: normal;
   font-weight: lighter;
+  /* overflow-x: hidden; */
 }
 
 #centering-wrapper {
@@ -65,9 +66,21 @@ body {
   background-color: lightgray;
   position: fixed;
   top: 140px;
-  width: 300px;
   height: 587px;
+  width: 290px;
+  transition: width 1s ease-in-out;
   /* z-index: -1; */
+}
+
+#menu-content {
+  padding: 30px;
+}
+
+.is-closed {
+  display: none;
+}
+.is-open {
+  display: block;
 }
 
 #title-div {
