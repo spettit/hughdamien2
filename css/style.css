@@ -175,7 +175,7 @@ body {
   width: 1390px;
   position: sticky;
   position: -webkit-sticky;
-  top: 145px;
+  top: 140px;
 }
 
 .image-box {
@@ -224,4 +224,51 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+#last-panel {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 140px;
+}
+
+#comfort-text {
+  background-color: #525252;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#section-eight-contact {
+  height: 412px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#contact-text {
+  display: flex;
+  flex-direction: row;
+}
+
+#contact-text-box {
+  width: 468px;
+}
+
+#inner-box {
+  padding-left: 40px;
+}
+
+#footer {
+  height: 200px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
 }
