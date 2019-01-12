@@ -205,8 +205,8 @@ body {
   width: 100%;
   background-color: blueviolet;
   background-image: url("/img/passenger.jpg");
-  background-size: contain;
-  background-position: right;
+  background-size: auto 100%;
+  background-position: 100% 140px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -216,8 +216,8 @@ body {
   /* width: 930px; */
   background-color: blueviolet;
   background-image: url("/img/panel3-airport.jpg");
-  background-size: contain;
-  background-position: right;
+  background-size: auto 100%;
+  background-position: 100% 140px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
