@@ -5,7 +5,7 @@
 }
 
 #carousel-wrapper {
-  background-color: pink;
+  background-color: #6b6a6a;
   width: 1390px;
   margin: auto;
   display: flex;
@@ -44,7 +44,18 @@
   cursor: pointer;
 }
 
+#carousel-list {
+  padding: 40px;
+  padding-right: 0px;
+}
+
 li {
   list-style: none;
   cursor: pointer;
+  margin-top: 20px;
+}
+
+li img {
+  width: 30px;
+  transform: translateY(5px);
 }

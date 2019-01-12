@@ -9,6 +9,11 @@ const nextBtn = document.querySelector('#next-button');
 const listOne = document.querySelector("#pic1")
 const listTwo = document.querySelector("#pic2")
 const listThree = document.querySelector("#pic3")
+const listFour = document.querySelector("#pic4")
+const listFive = document.querySelector("#pic5")
+const listSix = document.querySelector("#pic6")
+const listSeven = document.querySelector("#pic7")
+const listEight = document.querySelector("#pic8")
 const size = 922;
 
 carouselSlide.style.transition = "transform 0.6s ease-in-out";
@@ -54,5 +59,25 @@ listTwo.addEventListener('click', () => {
 })
 listThree.addEventListener('click', () => {
     counter = 2
+    update()
+})
+listFour.addEventListener('click', () => {
+    counter = 3
+    update()
+})
+listFive.addEventListener('click', () => {
+    counter = 4
+    update()
+})
+listSix.addEventListener('click', () => {
+    counter = 5
+    update()
+})
+listSeven.addEventListener('click', () => {
+    counter = 6
+    update()
+})
+listEight.addEventListener('click', () => {
+    counter = 7
     update()
 })
