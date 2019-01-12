@@ -1,3 +1,5 @@
+/* GENERAL */
+
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +11,28 @@ body {
   font-style: normal;
   font-weight: lighter;
   /* overflow-x: hidden; */
+}
+img { 
+  -webkit-user-drag: none; 
+  -khtml-user-drag: none; 
+  -moz-user-drag: none; 
+  -o-user-drag: none; 
+  user-drag: none; 
+}
+
+.behidden {
+  opacity: 0;
+}
+
+
+/* FRAMEWORK */
+
+#super-div {
+  position: fixed;
+  height: 140px;
+  width: 2000px;
+  background-color: white;
+  z-index: 500;
 }
 
 #centering-wrapper {
@@ -25,6 +49,8 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+/* TITLEBAR */
 
 #titlebar-wrapper {
   z-index: 1000;
@@ -55,12 +81,73 @@ body {
   transition: opacity 500ms ease-in 10s;
 }
 
-#menu {
+#title-div {
+  z-index: 10000;
+  /* background-color: aqua; */
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hugh {
+  transition: opacity 4s ease-in-out;
+}
+
+#damien {
+  transition: opacity 2s ease-in-out 4s;
+}
+
+#subtitle {
+  transition: opacity 2s ease-in-out 6s;
+}
+
+.title-slow {
+  transition: transform 1s ease-in-out 8s;
+}
+
+.title-fast {
+  transition: transform 200ms ease-in-out 0s;
+}
+
+.expanded {
+  transform: translate(0px, 668px) scale(1, 1);
+}
+
+.position-one {
+  transform: translate(0px, 468px) scale(0.66, 0.66);
+}
+
+.position-final {
+  transform: translate(0px, 244px) scale(0.5, 0.5);
+}
+
+/* SUB TITLE BAR */
+
+#menu-button {
   /* background-color: beige; */
   width: 300px;
   align-self: flex-end;
   margin-left: 20px;
 }
+
+#menu-icon {
+  transition: transform 1s ease-in-out;
+}
+
+.rotate-icon {
+  transform: rotate(90deg);
+}
+
+#tel-div {
+  /* background-color: beige; */
+  width: 200px;
+  text-align: right;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+/* MENU */
 
 #menu-div {
   background-color: rgb(241, 239, 239);
@@ -90,30 +177,7 @@ body {
   display: block;
 }
 
-#title-div {
-  z-index: 10000;
-  /* background-color: aqua; */
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.title-slow {
-  transition: transform 1s ease-in-out 8s;
-}
-
-.title-fast {
-  transition: transform 200ms ease-in-out 0s;
-}
-
-#contact-div {
-  /* background-color: beige; */
-  width: 200px;
-  text-align: right;
-  align-self: flex-end;
-  margin-right: 20px;
-}
+/* MAIN CONTENT */
 
 #content-wrapper {
   /* background-color: black; */
@@ -122,69 +186,8 @@ body {
   transition: transform 1s ease-in-out;
 }
 
-#section-one-mercs {
-  /* width: calc(100vw + 300px); */
-  width: 1390px;
-  height: calc(100vh - 140px);
-  min-height: 700px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .slide-away {
   transform: translate(300px, 0px);
-}
-
-#menu-icon {
-  transition: transform 1s ease-in-out;
-}
-
-.rotate-icon {
-  transform: rotate(90deg);
-}
-
-.expanded {
-  transform: translate(0px, 668px) scale(1, 1);
-}
-
-.position-one {
-  transform: translate(0px, 468px) scale(0.66, 0.66);
-}
-
-.position-final {
-  transform: translate(0px, 244px) scale(0.5, 0.5);
-}
-.behidden {
-  opacity: 0;
-}
-
-#hugh {
-  transition: opacity 4s ease-in-out;
-}
-
-#damien {
-  transition: opacity 2s ease-in-out 4s;
-}
-
-#subtitle {
-  transition: opacity 2s ease-in-out 6s;
-}
-
-#mercs {
-  transition: opacity 500ms ease-in-out 9s;
-}
-
-#scroll-arrows {
-  transition: opacity 1s ease-in-out 9s;
-}
-
-/* customer section */
-
-#spacer {
-  height: 300px;
 }
 
 .panel {
@@ -202,26 +205,37 @@ body {
   color: white;
 }
 
-/* #passenger-text {
-  width: 468px;
-} */
-
 .text-box {
-  min-width: 500px;
-  max-width: 500px;
+  min-width: 468px;
+  max-width: 468px;
   padding: 40px;
 }
 
-#section-three-fleet {
+/* MERC PANEL */
+
+#section-one-mercs {
+  /* width: calc(100vw + 300px); */
+  width: 1390px;
+  height: calc(100vh - 140px);
+  min-height: 700px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-#fleet-text {
-  padding: 50px;
+#mercs {
+  transition: opacity 500ms ease-in-out 9s;
 }
+
+#scroll-arrows {
+  transition: opacity 1s ease-in-out 9s;
+}
+
+/* PASSENGER */
 
 #passenger-parallax {
-  /* height: 100; */
   width: 100%;
   background-color: #525252;
   background-image: url("/img/passenger.jpg");
@@ -231,9 +245,20 @@ body {
   background-attachment: fixed;
 }
 
+/* FLEET */
+
+#section-three-fleet {
+  background-color: white;
+}
+
+#fleet-text {
+  padding: 50px;
+}
+
+/* AIRPORT */
+
 #airport-parallax {
   width: 100%;
-  /* width: 930px; */
   background-color: #525252;
   background-image: url("/img/panel3-airport.jpg");
   background-size: auto 100%;
@@ -242,9 +267,13 @@ body {
   background-attachment: fixed;
 }
 
+/* TOURS */
+
 #section-six-tours {
   height: 687px;
 }
+
+/* COMFORT */
 
 #section-seven {
   /* height: calc(100vh - 140px); */
@@ -257,6 +286,8 @@ body {
   text-align: center;
   padding-bottom: 20px;
 }
+
+/* CONTACT */
 
 #section-eight-contact {
   height: 412px;
@@ -280,6 +311,8 @@ body {
 #inner-box {
   padding-left: 40px;
 }
+
+/* FOOTER */
 
 #footer {
   height: 80px;

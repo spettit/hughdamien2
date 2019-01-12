@@ -8,10 +8,10 @@ const subTitleBar = document.querySelector("#subtitle-bar");
 const contentWrapper = document.querySelector("#content-wrapper");
 const menuDiv = document.querySelector("#menu-div");
 const menuIcon = document.querySelector("#menu-icon");
-const fleet = document.querySelector('#section-three-fleet');
-const airport = document.querySelector('#section-four-airport');
-const tours = document.querySelector('#section-six-tours');
-const contact = document.querySelector('#section-eight-contact');
+const fleet = document.querySelector("#section-three-fleet");
+const airport = document.querySelector("#section-four-airport");
+const tours = document.querySelector("#section-six-tours");
+const contact = document.querySelector("#section-eight-contact");
 
 function runAnimation() {
   titleDiv.classList.add("position-one");
@@ -24,40 +24,31 @@ function runAnimation() {
   subTitleBar.classList.remove("behidden");
 }
 
-let isMenuOpen= false
+let isMenuOpen = false;
 
-menuIcon.addEventListener('transitionend', () => {
-  console.log('transition end')
-  if(!isMenuOpen) {
-    menuDiv.classList.remove("is-open")
-    menuDiv.classList.add("is-closed")
+menuIcon.addEventListener("transitionend", () => {
+  console.log("transition end");
+  if (!isMenuOpen) {
+    menuDiv.classList.remove("is-open");
+    menuDiv.classList.add("is-closed");
   }
-})
+});
 
 function showMenu() {
-  sendTitleToTop()
+  sendTitleToTop();
   menuIcon.classList.toggle("rotate-icon");
-  if(!isMenuOpen) {
+  if (!isMenuOpen) {
     contentWrapper.classList.add("slide-away");
-    menuDiv.classList.add("is-open")
-    menuDiv.classList.remove("is-closed")
+    menuDiv.classList.add("is-open");
+    menuDiv.classList.remove("is-closed");
     isMenuOpen = true;
-  }else{
+  } else {
     contentWrapper.classList.remove("slide-away");
-    
     isMenuOpen = false;
   }
-  
-
-  
 }
 
-window.onscroll = function() {
-  sendTitleToTop();
-  window.scrollTo(0, window.scrollY)
-};
-
-function sendTitleToTop () {
+function sendTitleToTop() {
   if (titleDiv.classList.contains("position-one")) {
     titleDiv.classList.remove("title-slow");
     titleDiv.classList.add("title-fast");
@@ -67,41 +58,40 @@ function sendTitleToTop () {
   }
 }
 
-// $(window).on("beforeunload", function() {
-//   $(window).scrollTop(0);
-// });
+function scrollToFleet() {
+  window.scrollTo(0, 0);
+  fleet.scrollIntoView({
+    inline: "end"
+  });
+  window.scrollTo(0, window.scrollY);
+}
+function scrollToAirport() {
+  window.scrollTo(0, 0);
+  airport.scrollIntoView({
+    inline: "end"
+  });
+  window.scrollTo(0, window.scrollY);
+}
+function scrollToTours() {
+  window.scrollTo(0, 0);
+  tours.scrollIntoView({
+    inline: "end"
+  });
+  window.scrollTo(0, window.scrollY);
+}
+function scrollToContact() {
+  window.scrollTo(0, 0);
+  contact.scrollIntoView({
+    inline: "end"
+  });
+  window.scrollTo(0, window.scrollY);
+}
+
+window.onscroll = function() {
+  sendTitleToTop();
+  window.scrollTo(0, window.scrollY);
+};
 
 window.onload = function() {
   runAnimation();
 };
-
-function scrollToFleet() {
-  window.scrollTo(0, 0)
-  fleet.scrollIntoView({ 
-    inline: "end"
-  });
-  window.scrollTo(0, window.scrollY)
-}
-function scrollToAirport() {
-  window.scrollTo(0, 0)
-  airport.scrollIntoView({ 
-    inline: "end"
-  });
-  window.scrollTo(0, window.scrollY)
-}
-function scrollToTours() {
-  window.scrollTo(0, 0)
-  tours.scrollIntoView({ 
-    inline: "end"
-  });
-  window.scrollTo(0, window.scrollY)
-}
-function scrollToContact() {
-  window.scrollTo(0, 0)
-  contact.scrollIntoView({ 
-    inline: "end"
-  });
-  window.scrollTo(0, window.scrollY)
-}
-
-
