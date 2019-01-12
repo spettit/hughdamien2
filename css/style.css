@@ -140,11 +140,20 @@ img {
 }
 
 #tel-div {
+  display: flex;
+  justify-content: flex-end;
   /* background-color: beige; */
-  width: 200px;
+  width: 400px;
   text-align: right;
   align-self: flex-end;
   margin-right: 20px;
+  font-size: x-large;
+}
+
+#tel-div img {
+  height: 20px;
+  align-self: center;
+  margin-right: 8px;
 }
 
 /* MENU */
@@ -211,6 +220,14 @@ img {
   padding: 40px;
 }
 
+.text-box p {
+  margin-top: 20px;
+}
+
+.text-box h2 {
+  margin-top: 20px;
+}
+
 /* MERC PANEL */
 
 #section-one-mercs {
@@ -253,6 +270,23 @@ img {
 
 #fleet-text {
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fleet-text-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fleet-text-box-text {
+  width: 350px;
+}
+
+.fleet-text-box-text h2 {
+  margin-left: 40px;
 }
 
 /* AIRPORT */
@@ -267,6 +301,8 @@ img {
   background-attachment: fixed;
 }
 
+
+
 /* TOURS */
 
 #section-six-tours {
@@ -275,28 +311,56 @@ img {
 
 /* COMFORT */
 
-#section-seven {
-  /* height: calc(100vh - 140px); */
-  /* overflow: hidden; */
-}
+
 
 #comfort-text {
-  background-color: #525252;
-  color: white;
+  /* height: 268px; */
+  background-color: #B1B2B1;
+  color: black;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+#comfort-text div {
+  width: 900px;
+  margin: 40px;
+}
+
+#comfort-text h{
+  width: 900px;
+}
+
+
+#comfort-text img {
+  width: auto;
+  height: 60px;
 }
 
 /* CONTACT */
 
 #section-eight-contact {
-  height: 412px;
+  width: 1390px;
+  /* height: 1000px; */
+  /* border: black solid 5px; */
   background-color: white;
   display: flex;
-  flex-direction: row;
-  color: black;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  flex-direction: column;
+  
+  /* color: black; */
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+}
+
+#contact-wrapper {
+  /* min-height: 413px; */
+  display: flex;
+  overflow: hidden;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 #contact-text {
@@ -304,12 +368,22 @@ img {
   flex-direction: row;
 }
 
+#car-door {
+  height: 413px;
+  width: 916;
+}
+
 #contact-text-box {
-  width: 468px;
+  background-color: white;
+  color: black;
+  padding-top: 40px;
+  min-width: 468px;
 }
 
 #inner-box {
+  padding-top: 40px;
   padding-left: 40px;
+  font-size: x-large;
 }
 
 /* FOOTER */
