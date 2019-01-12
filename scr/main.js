@@ -24,6 +24,8 @@ function runAnimation() {
   subTitleBar.classList.remove("behidden");
 }
 
+//small change
+
 // let isMenuOpen = false;
 
 // menuIcon.addEventListener("transitionend", () => {
