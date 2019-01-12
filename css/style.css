@@ -223,7 +223,7 @@ body {
 #passenger-parallax {
   /* height: 100; */
   width: 100%;
-  background-color: blueviolet;
+  background-color: #525252;
   background-image: url("/img/passenger.jpg");
   background-size: auto 100%;
   background-position: 100% 140px;
@@ -234,7 +234,7 @@ body {
 #airport-parallax {
   width: 100%;
   /* width: 930px; */
-  background-color: blueviolet;
+  background-color: #525252;
   background-image: url("/img/panel3-airport.jpg");
   background-size: auto 100%;
   background-position: 100% 140px;

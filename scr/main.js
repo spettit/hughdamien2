@@ -53,7 +53,8 @@ function showMenu() {
 }
 
 window.onscroll = function() {
-  sendTitleToTop()
+  sendTitleToTop();
+  window.scrollTo(0, window.scrollY)
 };
 
 function sendTitleToTop () {
@@ -103,8 +104,4 @@ function scrollToContact() {
   window.scrollTo(0, window.scrollY)
 }
 
-window.onscroll = function () {
-  // console.log(window.scrollY)
-  window.scrollTo(0, window.scrollY)
-}
 
