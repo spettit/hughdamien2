@@ -226,6 +226,10 @@ body {
   background-attachment: fixed;
 }
 
+#section-six-tours {
+  height: 687px;
+}
+
 #section-seven {
   height: calc(100vh - 140px);
   overflow: hidden;

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/hyb3cvv.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="carousel/style.css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <script>
       history.scrollRestoration = "manual";
@@ -171,19 +172,40 @@
                 <img src="img/feedback-image.jpg" alt="" />
               </div>
               <div id="section-six-tours" class="panel image-box">
-                <div id="passenger-text">
-                  <img src="" alt="" />
-                  <div class="text-box">
-                    <h1>Chauffeur Tours</h1>
-                    <p>
-                      we offer a selection of set tours, in and around London.
-                    </p>
-                    <p>London by night (3hrs)</p>
-                    <p>Half day London (4hrs)</p>
+                <div id="carousel-wrapper">
+                  <div id="carousel-list">
+                    <ul>
+                      <li id="pic1">One</li>
+                      <li id="pic2">Two</li>
+                      <li id="pic3">Three</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="carousel-container"
+                    style="background-color: black;"
+                  >
+                    <img
+                      src="/carousel/img/left-arrow-rollover.png"
+                      alt=""
+                      id="prev-button"
+                    />
+                    <img
+                      src="/carousel/img/right-arrow-rollover.png"
+                      alt=""
+                      id="next-button"
+                    />
+                    <div class="carousel-slide">
+                      <img src="./carousel/img/slide1.jpg" alt="" id="one" />
+                      <img src="./carousel/img/slide2.jpg" alt="" />
+                      <img src="./carousel/img/slide3.jpg" alt="" />
+                      <img src="./carousel/img/slide4.jpg" alt="" />
+                      <img src="./carousel/img/slide5.jpg" alt="" />
+                      <img src="./carousel/img/slide6.jpg" alt="" />
+                      <img src="./carousel/img/slide7.jpg" alt="" />
+                      <img src="./carousel/img/slide8.jpg" alt="" />
+                    </div>
                   </div>
                 </div>
-                <!-- <img src="img/passenger.jpg" alt="" /> -->
-                <div class="carousel" id="tour-carousel"></div>
               </div>
               <div class="panel">
                 <div id="section-seven">
@@ -232,5 +254,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="scr/main.js"></script>
+    <script src="carousel/app.js"></script>
   </body>
 </html>
