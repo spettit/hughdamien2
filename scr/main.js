@@ -27,13 +27,13 @@ function runAnimation() {
 
 var isMenuOpen = false;
 
-menuIcon.addEventListener("transitionend", () => {
-  console.log("transition end");
-  if (!isMenuOpen) {
-    menuDiv.classList.remove("is-open");
-    menuDiv.classList.add("is-closed");
-  }
-});
+// menuIcon.addEventListener("transitionend", () => {
+//   console.log("transition end");
+//   if (!isMenuOpen) {
+//     menuDiv.classList.remove("is-open");
+//     menuDiv.classList.add("is-closed");
+//   }
+// });
 
 
 
@@ -61,34 +61,34 @@ function showMenu() {
   }
 }
 
-function scrollToFleet() {
-  window.scrollTo(0, 0);
-  fleet.scrollIntoView({
-    block: "start"
-  });
-  window.scrollTo(0, window.scrollY);
-}
-function scrollToAirport() {
-  window.scrollTo(0, 0);
-  airport.scrollIntoView({
+// function scrollToFleet() {
+//   window.scrollTo(0, 0);
+//   fleet.scrollIntoView({
+//     block: "start"
+//   });
+//   window.scrollTo(0, window.scrollY);
+// }
+// function scrollToAirport() {
+//   window.scrollTo(0, 0);
+//   airport.scrollIntoView({
 
-  });
-  window.scrollTo(0, window.scrollY);
-}
-function scrollToTours() {
-  window.scrollTo(0, 0);
-  tours.scrollIntoView({
+//   });
+//   window.scrollTo(0, window.scrollY);
+// }
+// function scrollToTours() {
+//   window.scrollTo(0, 0);
+//   tours.scrollIntoView({
 
-  });
-  window.scrollTo(0, window.scrollY);
-}
-function scrollToContact() {
-  window.scrollTo(0, 0);
-  contact.scrollIntoView({
+//   });
+//   window.scrollTo(0, window.scrollY);
+// }
+// function scrollToContact() {
+//   window.scrollTo(0, 0);
+//   contact.scrollIntoView({
 
-  });
-  window.scrollTo(0, window.scrollY);
-}
+//   });
+//   window.scrollTo(0, window.scrollY);
+// }
 
 window.onscroll = function() {
   sendTitleToTop();
