@@ -47,19 +47,19 @@ function sendTitleToTop() {
   }
 }
 
-function showMenu() {
-  sendTitleToTop();
-  menuIcon.classList.toggle("rotate-icon");
-  if (!isMenuOpen) {
-    contentWrapper.classList.add("slide-away");
-    menuDiv.classList.add("is-open");
-    menuDiv.classList.remove("is-closed");
-    isMenuOpen = true;
-  } else {
-    contentWrapper.classList.remove("slide-away");
-    isMenuOpen = false;
-  }
-}
+// function showMenu() {
+//   sendTitleToTop();
+//   menuIcon.classList.toggle("rotate-icon");
+//   if (!isMenuOpen) {
+//     contentWrapper.classList.add("slide-away");
+//     menuDiv.classList.add("is-open");
+//     menuDiv.classList.remove("is-closed");
+//     isMenuOpen = true;
+//   } else {
+//     contentWrapper.classList.remove("slide-away");
+//     isMenuOpen = false;
+//   }
+// }
 
 // function scrollToFleet() {
 //   window.scrollTo(0, 0);
