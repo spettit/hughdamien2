@@ -27,13 +27,13 @@ function runAnimation() {
 
 let isMenuOpen = false;
 
-menuIcon.addEventListener("transitionend", () => {
-  console.log("transition end");
-  if (!isMenuOpen) {
-    menuDiv.classList.remove("is-open");
-    menuDiv.classList.add("is-closed");
-  }
-});
+// menuIcon.addEventListener("transitionend", () => {
+//   console.log("transition end");
+//   if (!isMenuOpen) {
+//     menuDiv.classList.remove("is-open");
+//     menuDiv.classList.add("is-closed");
+//   }
+// });
 
 
 
