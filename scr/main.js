@@ -37,15 +37,15 @@ function runAnimation() {
 
 
 
-// function sendTitleToTop() {
-//   if (titleDiv.classList.contains("position-one")) {
-//     titleDiv.classList.remove("title-slow");
-//     titleDiv.classList.add("title-fast");
-//     titleDiv.classList.add("position-final");
-//     titleDiv.classList.remove("position-one");
-//     scrollArrows.style.visibility = "hidden";
-//   }
-// }
+function sendTitleToTop() {
+  if (titleDiv.classList.contains("position-one")) {
+    titleDiv.classList.remove("title-slow");
+    titleDiv.classList.add("title-fast");
+    titleDiv.classList.add("position-final");
+    titleDiv.classList.remove("position-one");
+    scrollArrows.style.visibility = "hidden";
+  }
+}
 
 // function showMenu() {
 //   sendTitleToTop();
