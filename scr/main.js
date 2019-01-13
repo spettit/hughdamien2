@@ -25,7 +25,7 @@ function runAnimation() {
 }
 
 
-var isMenuOpen = false;
+let isMenuOpen = false;
 
 // menuIcon.addEventListener("transitionend", () => {
 //   console.log("transition end");
