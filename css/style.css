@@ -263,6 +263,18 @@ img {
   background-attachment: fixed;
 }
 
+@media only screen and (max-width: 770px) {
+  #passenger-parallax {
+    width: 100%;
+    background-color: #525252;
+    background-image: url("/img/passenger.jpg");
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-attachment: local;
+  }
+}
+
 /* FLEET */
 
 #section-three-fleet {
@@ -303,17 +315,18 @@ img {
   background-attachment: fixed;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+@media only screen and (max-width: 770px) {
   #airport-parallax {
     width: 100%;
     background-color: #525252;
     background-image: url("/img/panel3-airport.jpg");
-    background-size: auto 100%;
-    background-position: 100% 140px;
+    background-size: cover;
+    background-position: right top;
     background-repeat: no-repeat;
+    background-attachment: local;
   }
 }
+
 
 #section-five-feedback {
   background-color: white;
