@@ -27,12 +27,12 @@ function runAnimation() {
 
 var isMenuOpen = false;
 
-// menuIcon.addEventListener("transitionend", () => {
-//   if (!isMenuOpen) {
-//     menuDiv.classList.remove("is-open");
-//     menuDiv.classList.add("is-closed");
-//   }
-// });
+menuIcon.addEventListener("transitionend", () => {
+  if (!isMenuOpen) {
+    menuDiv.classList.remove("is-open");
+    menuDiv.classList.add("is-closed");
+  }
+});
 
 
 
