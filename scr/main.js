@@ -61,34 +61,32 @@ function showMenu() {
   }
 }
 
-// function scrollToFleet() {
-//   window.scrollTo(0, 0);
-//   fleet.scrollIntoView({
-//     block: "start"
-//   });
-//   window.scrollTo(0, window.scrollY);
-// }
+function scrollToFleet() {
+  window.scrollTo(0, 0);
+  fleet.scrollIntoView({
+  });
+  window.scrollTo(0, window.scrollY);
+}
 function scrollToAirport() {
   window.scrollTo(0, 0);
   airport.scrollIntoView({
+  });
+  window.scrollTo(0, window.scrollY);
+}
+function scrollToTours() {
+  window.scrollTo(0, 0);
+  tours.scrollIntoView({
 
   });
   window.scrollTo(0, window.scrollY);
 }
-// function scrollToTours() {
-//   window.scrollTo(0, 0);
-//   tours.scrollIntoView({
+function scrollToContact() {
+  window.scrollTo(0, 0);
+  contact.scrollIntoView({
 
-//   });
-//   window.scrollTo(0, window.scrollY);
-// }
-// function scrollToContact() {
-//   window.scrollTo(0, 0);
-//   contact.scrollIntoView({
-
-//   });
-//   window.scrollTo(0, window.scrollY);
-// }
+  });
+  window.scrollTo(0, window.scrollY);
+}
 
 window.onscroll = function() {
   sendTitleToTop();
