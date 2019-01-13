@@ -247,7 +247,7 @@ img {
 }
 
 #scroll-arrows {
-  transform: translate(0px, -36px);
+  transform: translate(0px, -34px);
   transition: opacity 1s ease-in-out 9s;
 }
 
